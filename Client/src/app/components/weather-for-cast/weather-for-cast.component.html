@@ -1,0 +1,16 @@
+<div class="row">
+  <div *ngFor="let WeatherForCast of weatherForCasts" class="col-3">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">{{WeatherForCast.summary}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{WeatherForCast.date | date}}</h6>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <span> {{WeatherForCast.temperatureC}} </span>
+          </li>
+          <li class="list-group-item">{{WeatherForCast.temperatureF}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
